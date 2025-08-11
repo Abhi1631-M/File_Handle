@@ -15,7 +15,7 @@ public class FileHandlerApp {
     {
         String baseDir="data";
         new File(baseDir).mkdirs();
-
+        runFileHandler(new XmlHandler(), "xml", new File(baseDir, "users.xml"));
         runFileHandler(new PropertiesHandle(),"properties", new File(baseDir,"users.properties"));
 
     }
